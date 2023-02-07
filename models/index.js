@@ -7,6 +7,6 @@ mongoose.set("strictQuery",true);
 const db = {};
 db.mongoose = mongoose;
 db.url = dbConfig.url;
-db.tutorials = require("./tutorial.model.js")(mongoose);
+db.Hospitals = require("./Hospital.model.js")(mongoose);
 
 module.exports = db;
